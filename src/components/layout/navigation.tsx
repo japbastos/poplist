@@ -2,6 +2,7 @@ import {
   BarChart3,
   Activity,
   CalendarCheck,
+  CalendarDays,
   CheckSquare,
   FolderKanban,
   History,
@@ -14,6 +15,11 @@ export const navigationItems = [
     href: "/today",
     label: "Hoje",
     icon: CalendarCheck,
+  },
+  {
+    href: "/calendar",
+    label: "Calendário",
+    icon: CalendarDays,
   },
   {
     href: "/projects",
