@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --radius: 0.625rem;
+  --background: #ececf1;
+  --foreground: #202c39;
+  --card: #f7f7fa;
+  --card-foreground: #202c39;
+  --popover: #f7f7fa;
+  --popover-foreground: #202c39;
+  --primary: #302f67;
+  --primary-foreground: #ececf1;
+  --secondary: #e3e2ea;
+  --secondary-foreground: #302f67;
+  --muted: #e1e0e6;
+  --muted-foreground: #657080;
+  --accent: #eee7f1;
+  --accent-foreground: #302f67;
+  --destructive: #b42332;
+  --border: #d0cfcf;
+  --input: #d0cfcf;
+  --ring: #974aaa;
+  --brand-secondary: #974aaa;
+  --brand-primary: #302f67;
+  --sidebar: #f7f7fa;
+  --sidebar-foreground: #202c39;
+  --sidebar-accent: #eee7f1;
+  --sidebar-accent-foreground: #302f67;
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --font-sans:
+    Ubuntu, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --font-mono:
+    "Geist Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+.dark {
+  --background: #171a21;
+  --foreground: #ececf1;
+  --card: #202c39;
+  --card-foreground: #ececf1;
+  --popover: #202c39;
+  --popover-foreground: #ececf1;
+  --primary: #d0cfcf;
+  --primary-foreground: #171a21;
+  --secondary: #252646;
+  --secondary-foreground: #ececf1;
+  --muted: #202c39;
+  --muted-foreground: #b9b8c2;
+  --accent: #302f67;
+  --accent-foreground: #ececf1;
+  --destructive: #ff8a8d;
+  --border: #d0cfcf24;
+  --input: #d0cfcf2e;
+  --ring: #974aaa;
+  --brand-primary: #302f67;
+  --sidebar: #202c39;
+  --sidebar-foreground: #ececf1;
+  --sidebar-accent: #302f67;
+  --sidebar-accent-foreground: #ececf1;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: color-mix(in oklab, var(--brand-secondary) 35%, transparent);
+}
